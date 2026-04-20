@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A contact form to get in touch with the counselors at the Riverstone Counseling Group">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Riverstone Counseling Group</title>
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <!--Banner-->
+        <div class="banner"></div>
+        
+        <!--Top Nav-->
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-primary rounded-navbar shadow">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <!--LOGO SPOT-->
+                        <img src="images/logo.png" alt="Riverstone Logo" class="rounded-circle" style="height: 60px; width: 60px;">
+                        <span class="ms-2">Riverstone Counseling Group</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNavAltMarkup">
+                        <div class="navbar-nav fs-5">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="counselors.html">Our Counselors</a>
+                            <a class="nav-link" href="resources.html">Resources</a>
+                            <a class="nav-link active" aria-current="page" href="contact_us.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--Contact Box-->
+        <div class="container my-5 fw-bold rounded-5">
+            <form action="https://formsubmit.co/!!!!!!!ADD CONTACT EMAIL!!!!!!" method="POST">
+                    <input type="hidden" name="_subject" value="New Riverstone Contact Message!">
+                    <input type="hidden" name="_autoresponse" value="Thank you for reaching out! We will respond as soon as possible.">
+
+                <div class="mb-3">
+                    <label for="name-input" class="form-label">Name</label>
+                    <input type="text" class="form-control bg-light" id="nameinput" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email-input" class="form-label">Email</label>
+                    <input type="email" class="form-control bg-light" id="email-input" name="email" placeholder="example@email.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="text-box" class="form-label">Message</label>
+                    <textarea class="form-control bg-light" id="text-box" rows="6" name="message" placeholder="Optional"></textarea>
+                </div>
+                <div class="container mb-3">
+                    <button type="submit" class="btn btn-primary rounded-pill shadow">Send</button>
+                </div>
+            </form>
+        </div>
+
+        <!--Bottom Nav-->
+        <div class="navbar navbar-expand-lg bg-primary mt-auto shadow-top">
+            <div class="container-fluid">
+                <div class="navbar-nav justify-content-center w-100">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="counselors.html">Our Counselors</a>
+                    <a class="nav-link" href="resources.html">Resources</a>
+                    <a class="nav-link active" aria-current="page" href="contact_us.html">Contact Us</a>                
+                </div>
+            </div>
+        </div>
+
+        <!--Riverstone Tag-->
+        <div class="container-fluid w-100 text-center bg-primary">
+            <a class="text-dark text-decoration-none" href="index.html">
+                Riverstone Counseling Group
+            </a>
+        </div>
+    </body>
+</html>
